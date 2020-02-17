@@ -27,14 +27,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @PropertySource("classpath:db_oracle.properties")
 public class DataSourceOracleConfig {
 	
-	@Bean
-	@ConfigurationProperties("spring.datasource")
+    @Bean
+    @ConfigurationProperties("spring.datasource")
     public DataSource oracleDataSource() {
         return DataSourceBuilder.create().build();
     }
 	
-	@Bean
-	@ConfigurationProperties("spring.jpa.properties")
+    @Bean
+    @ConfigurationProperties("spring.jpa.properties")
     public Properties oracleProperties() {
         return new Properties();
     }
