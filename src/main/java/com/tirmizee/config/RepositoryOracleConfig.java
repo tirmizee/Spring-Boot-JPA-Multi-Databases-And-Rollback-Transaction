@@ -17,7 +17,6 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-
 /**
  * @author Pratya Yeekhaday
  *
@@ -25,37 +24,38 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
-	basePackages = "com.tirmizee.repositories.oracle",
-	entityManagerFactoryRef = "oracleEntityManager",
+	basePackages = "com.tirmizee.jpa.repositories.oracle",
+	entityManagerFactoryRef = "oracleEntityManagerFactory",
 	transactionManagerRef = "oracleTransactionManager"
 )
 @PropertySource("classpath:db_oracle.properties")
-public class DataSourceOracleConfig {
+public class RepositoryOracleConfig {
 	
-    @Bean
+    @Bean(name = "oracleDataSource")
     @ConfigurationProperties("spring.datasource")
     public DataSource oracleDataSource() {
         return DataSourceBuilder.create().build();
     }
 	
-    @Bean
+    @Bean(name = "oracleProperties")
     @ConfigurationProperties("spring.jpa.properties")
     public Properties oracleProperties() {
         return new Properties();
     }
-
-    @Bean
+    
+    @Bean(name = "oracleEntityManagerFactory")
     public LocalContainerEntityManagerFactoryBean oracleEntityManagerFactory(DataSource oracleDataSource, Properties oracleProperties) {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(oracleDataSource);
-        factory.setPackagesToScan(new String[]{"com.tirmizee.entities.oracle"});
+        factory.setPersistenceUnitName("oracle-persistence");
+        factory.setPackagesToScan(new String[]{"com.tirmizee.jpa.entities.oracle"});
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         factory.setJpaProperties(oracleProperties);
         return factory;
     }
 	
-    @Bean
-    public PlatformTransactionManager securityTransactionManager(LocalContainerEntityManagerFactoryBean oracleEntityManagerFactory){
+    @Bean(name = "oracleTransactionManager")
+    public PlatformTransactionManager oracleTransactionManager(LocalContainerEntityManagerFactoryBean oracleEntityManagerFactory){
         EntityManagerFactory factory = oracleEntityManagerFactory.getObject();
         return new JpaTransactionManager(factory);
     }
