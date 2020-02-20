@@ -2,7 +2,7 @@
 Spring Data JPA multi-databases and roll back transaction
 
 
-### Run Console Log
+### Console Log
 
 
         .   ____          _            __ _ _
