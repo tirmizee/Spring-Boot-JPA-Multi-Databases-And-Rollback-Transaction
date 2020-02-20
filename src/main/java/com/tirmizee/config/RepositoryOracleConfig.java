@@ -5,6 +5,7 @@ import java.util.Properties;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -28,6 +29,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 	entityManagerFactoryRef = "oracleEntityManagerFactory",
 	transactionManagerRef = "oracleTransactionManager"
 )
+//@ConditionalOnProperty(
+//    value="enabled", 
+//    havingValue = "true", 
+//    matchIfMissing = true)
 @PropertySource("classpath:db_oracle.properties")
 public class RepositoryOracleConfig {
 	
@@ -56,8 +61,7 @@ public class RepositoryOracleConfig {
 	
     @Bean(name = "oracleTransactionManager")
     public PlatformTransactionManager oracleTransactionManager(LocalContainerEntityManagerFactoryBean oracleEntityManagerFactory){
-        EntityManagerFactory factory = oracleEntityManagerFactory.getObject();
-        return new JpaTransactionManager(factory);
+    	return new JpaTransactionManager(oracleEntityManagerFactory.getObject());
     }
     
 }
