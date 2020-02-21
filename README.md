@@ -6,7 +6,7 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 
 ### Project structure
 
-![pro](https://user-images.githubusercontent.com/15135199/74959585-6efc7b00-543d-11ea-845d-87edd7d57564.PNG)
+![pro](https://user-images.githubusercontent.com/15135199/75027535-48881f80-54d1-11ea-8b16-2b9954f3f24e.PNG)
 
 ### Config application.properties
 
