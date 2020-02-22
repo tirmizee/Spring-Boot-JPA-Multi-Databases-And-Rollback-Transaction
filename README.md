@@ -155,6 +155,8 @@ in src/main/resources
 
 - Test Oracle transaction
 
+![ezgif com-resize](https://user-images.githubusercontent.com/15135199/75093881-7e540380-55b8-11ea-9d30-0da1dde4eae4.gif)
+
 - Test Postgres transaction
 
 ### Console Log
