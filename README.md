@@ -139,6 +139,8 @@ in src/main/resources
 
 - Postgres service 
 
+![handle transaction](https://user-images.githubusercontent.com/15135199/75091759-70e04e80-55a3-11ea-9642-9f1925a21605.PNG)
+
 
 ### Test transactions
 
