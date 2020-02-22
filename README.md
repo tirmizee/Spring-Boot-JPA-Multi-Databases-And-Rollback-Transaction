@@ -48,6 +48,30 @@ in src/main/resources
         spring.jpa.properties.oracle.hibernate.format_sql=true
         spring.jpa.properties.oracle.hibernate.type=trace
 
+- db_maria.properties
+
+        enabled=true
+
+        spring.datasource.maria.hikari.jdbc-url=jdbc:mariadb://localhost:3305/schema_mariadb
+        spring.datasource.maria.hikari.username=root
+        spring.datasource.maria.hikari.password=root
+        spring.datasource.maria.hikari.schema=schema_mariadb
+        spring.datasource.maria.hikari.driver-class-name=org.mariadb.jdbc.Driver
+        spring.datasource.maria.hikari.type=com.zaxxer.maria.hikari.HikariDataSource
+        spring.datasource.maria.hikari.connection-timeout=60000
+        spring.datasource.maria.hikari.minimum-idle=2
+        spring.datasource.maria.hikari.maximum-pool-size=5 
+        spring.datasource.maria.hikari.idle-timeout=10000
+        spring.datasource.maria.hikari.max-lifetime=300000
+        spring.datasource.maria.hikari.auto-commit=true
+        spring.datasource.maria.hikari.pool-name=MariaPool
+
+        spring.jpa.properties.maria.hibernate.dialect=org.hibernate.dialect.MariaDB103Dialect
+        spring.jpa.properties.maria.hibernate.hbm2ddl.auto=update
+        spring.jpa.properties.maria.hibernate.show_sql=true
+        spring.jpa.properties.maria.hibernate.use_sql_comments=true
+        spring.jpa.properties.maria.hibernate.format_sql=true
+        spring.jpa.properties.maria.hibernate.type=trace
 
 ### Console Log
 
