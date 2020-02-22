@@ -149,6 +149,8 @@ in src/main/resources
 
 - Test Mysql transaction
 
+![ezgif com-resize](https://user-images.githubusercontent.com/15135199/75093714-c7a35380-55b6-11ea-9c46-916fc68a0718.gif)
+
 - Test Mariadb transaction
 
 - Test Oracle transaction
