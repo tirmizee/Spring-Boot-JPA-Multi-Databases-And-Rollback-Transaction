@@ -20,6 +20,33 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
         logging.level.com.zaxxer.hikari=TRACE
 
 
+### Config database
+
+in src/main/resources
+
+- db_oracle.properties
+
+        enabled=true
+
+        spring.datasource.oracle.hikari.jdbc-url=jdbc:oracle:thin:@192.168.20.114:1521:xe
+        spring.datasource.oracle.hikari.username=C##ORGANIZATION
+        spring.datasource.oracle.hikari.password=organization
+        spring.datasource.oracle.hikari.driver-class-name=oracle.jdbc.OracleDriver
+        spring.datasource.oracle.hikari.connection-timeout=60000
+        spring.datasource.oracle.hikari.minimum-idle=5
+        spring.datasource.oracle.hikari.maximum-pool-size=20 
+        spring.datasource.oracle.hikari.idle-timeout=10000
+        spring.datasource.oracle.hikari.max-lifetime=300000
+        spring.datasource.oracle.hikari.auto-commit=true
+        spring.datasource.oracle.hikari.type=com.zaxxer.oracle.hikari.HikariDataSource
+        spring.datasource.oracle.hikari.pool-name=OraclePool
+
+        spring.jpa.properties.oracle.hibernate.dialect=org.hibernate.dialect.Oracle12cDialect
+        spring.jpa.properties.oracle.hibernate.hbm2ddl.auto=update
+        spring.jpa.properties.oracle.hibernate.show_sql=true
+        spring.jpa.properties.oracle.hibernate.use_sql_comments=true
+        spring.jpa.properties.oracle.hibernate.format_sql=true
+        spring.jpa.properties.oracle.hibernate.type=trace
 
 
 ### Console Log
