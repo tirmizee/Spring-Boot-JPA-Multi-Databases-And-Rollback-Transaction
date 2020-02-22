@@ -153,6 +153,8 @@ in src/main/resources
 
 - Test Mariadb transaction
 
+![ezgif com-resize (1)](https://user-images.githubusercontent.com/15135199/75094440-ad20a880-55bd-11ea-99c0-6eb77ad63aab.gif)
+
 - Test Oracle transaction
 
 ![ezgif com-resize](https://user-images.githubusercontent.com/15135199/75093881-7e540380-55b8-11ea-9d30-0da1dde4eae4.gif)
