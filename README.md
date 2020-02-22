@@ -18,6 +18,7 @@ in src/main/resources
 
         server.port=8000
 
+        logging.level.org.springframework.orm.jpa.JpaTransactionManager=DEBUG
         logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
         logging.level.com.zaxxer.hikari=TRACE
 
