@@ -10,6 +10,8 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 
 ### Config application.properties
 
+in src/main/resources
+
         spring.autoconfigure.exclude[0]=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
         spring.autoconfigure.exclude[1]=org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
         spring.autoconfigure.exclude[2]=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
@@ -72,6 +74,30 @@ in src/main/resources
         spring.jpa.properties.maria.hibernate.use_sql_comments=true
         spring.jpa.properties.maria.hibernate.format_sql=true
         spring.jpa.properties.maria.hibernate.type=trace
+        
+- db_mysql.properties
+        
+        enabled=true
+
+        spring.datasource.mysql.hikari.jdbc-url=jdbc:mysql://localhost:3306/schema_mysql?useSSL=false&allowPublicKeyRetrieval=true
+        spring.datasource.mysql.hikari.username=root
+        spring.datasource.mysql.hikari.password=root
+        spring.datasource.mysql.hikari.driver-class-name=com.mysql.cj.jdbc.Driver
+        spring.datasource.mysql.hikari.connection-timeout=60000
+        spring.datasource.mysql.hikari.minimum-idle=11
+        spring.datasource.mysql.hikari.maximum-pool-size=17 
+        spring.datasource.mysql.hikari.idle-timeout=10000
+        spring.datasource.mysql.hikari.max-lifetime=300000
+        spring.datasource.mysql.hikari.auto-commit=true
+        spring.datasource.mysql.hikari.type=com.zaxxer.mysql.hikari.HikariDataSource
+        spring.datasource.mysql.hikari.pool-name=MysqlPool
+
+        spring.jpa.properties.mysql.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+        spring.jpa.properties.mysql.hibernate.hbm2ddl.auto=update
+        spring.jpa.properties.mysql.hibernate.show_sql=true
+        spring.jpa.properties.mysql.hibernate.use_sql_comments=true
+        spring.jpa.properties.mysql.hibernate.format_sql=true
+        spring.jpa.properties.mysql.hibernate.type=trace
 
 ### Console Log
 
