@@ -11,7 +11,7 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 ### Config application.properties
 
         spring.autoconfigure.exclude[0]=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-        spring.autoconfigure.exclude[1]==org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+        spring.autoconfigure.exclude[1]=org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
         spring.autoconfigure.exclude[2]=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 
         server.port=8000
