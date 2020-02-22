@@ -125,7 +125,9 @@ in src/main/resources
         spring.jpa.properties.postgres.hibernate.type=trace
         
 
-### Handle Mysql transaction in service layer
+### Handle transaction in service layer
+
+- Mysql service 
 
 ![handle transaction](https://user-images.githubusercontent.com/15135199/75090688-01189680-5598-11ea-9bf7-b621302e2211.PNG)
 
