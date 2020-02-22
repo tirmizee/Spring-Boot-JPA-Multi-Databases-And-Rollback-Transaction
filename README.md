@@ -98,6 +98,32 @@ in src/main/resources
         spring.jpa.properties.mysql.hibernate.use_sql_comments=true
         spring.jpa.properties.mysql.hibernate.format_sql=true
         spring.jpa.properties.mysql.hibernate.type=trace
+        
+- db_postgres.properties        
+        
+        enabled=true
+
+        spring.datasource.postgres.hikari.jdbc-url=jdbc:postgresql://localhost:5433/postgres
+        spring.datasource.postgres.hikari.username=postgres
+        spring.datasource.postgres.hikari.password=postgres
+        spring.datasource.postgres.hikari.schema=schema_postgres
+        spring.datasource.postgres.hikari.driver-class-name=org.postgresql.Driver
+        spring.datasource.postgres.hikari.connection-timeout=60000
+        spring.datasource.postgres.hikari.minimum-idle=5
+        spring.datasource.postgres.hikari.maximum-pool-size=15 
+        spring.datasource.postgres.hikari.idle-timeout=10000
+        spring.datasource.postgres.hikari.max-lifetime= 300000
+        spring.datasource.postgres.hikari.auto-commit =true
+        spring.datasource.postgres.hikari.type=com.zaxxer.hikari.HikariDataSource
+        spring.datasource.postgres.hikari.pool-name=PostgresPool
+
+        spring.jpa.properties.postgres.hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect
+        spring.jpa.properties.postgres.hibernate.hbm2ddl.auto=update
+        spring.jpa.properties.postgres.hibernate.show_sql=true
+        spring.jpa.properties.postgres.hibernate.use_sql_comments=true
+        spring.jpa.properties.postgres.hibernate.format_sql=true
+        spring.jpa.properties.postgres.hibernate.type=trace
+        
 
 ### Console Log
 
