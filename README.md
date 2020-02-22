@@ -125,6 +125,7 @@ in src/main/resources
         spring.jpa.properties.postgres.hibernate.type=trace
         
 
+### Handle Mysql transaction in service layer
 
 ### Console Log
 
