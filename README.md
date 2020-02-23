@@ -144,6 +144,10 @@ in src/main/resources
 
 ![handle transaction](https://user-images.githubusercontent.com/15135199/75091759-70e04e80-55a3-11ea-9642-9f1925a21605.PNG)
 
+- Multi-Transaction service 
+
+![handle transaction](https://user-images.githubusercontent.com/15135199/75096004-794d7f00-55cd-11ea-82bd-6b3a2f9bd971.PNG)
+
 
 ### Test transactions
 
@@ -159,9 +163,7 @@ in src/main/resources
 
 ![ezgif com-resize](https://user-images.githubusercontent.com/15135199/75093881-7e540380-55b8-11ea-9d30-0da1dde4eae4.gif)
 
-- Test all database transaction
-
-![handle transaction](https://user-images.githubusercontent.com/15135199/75096004-794d7f00-55cd-11ea-82bd-6b3a2f9bd971.PNG)
+- Test Multi transaction
 
 ![ezgif com-resize (3)](https://user-images.githubusercontent.com/15135199/75095457-764f9000-55c7-11ea-960e-c0c8a9ab476f.gif)
 
