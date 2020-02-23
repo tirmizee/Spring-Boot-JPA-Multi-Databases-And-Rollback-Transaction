@@ -146,7 +146,7 @@ in src/main/resources
 
 - Multi-Transaction service 
 
-![handle transaction](https://user-images.githubusercontent.com/15135199/75096004-794d7f00-55cd-11ea-82bd-6b3a2f9bd971.PNG)
+![handle transaction](https://user-images.githubusercontent.com/15135199/75102775-73828880-5623-11ea-9919-4465a523d24f.PNG)
 
 
 ### Test transactions
