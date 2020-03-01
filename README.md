@@ -142,6 +142,7 @@ in src/main/resources
 
 - Oracle Repository
 
+![Capture](https://user-images.githubusercontent.com/15135199/75626417-fe521d00-5bf9-11ea-922d-08c0e03fbef7.PNG)
 
 
 ### Handle transaction in service layer
