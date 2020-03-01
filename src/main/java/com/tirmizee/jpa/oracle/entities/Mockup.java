@@ -1,4 +1,4 @@
-package com.tirmizee.jpa.entities.oracle;
+package com.tirmizee.jpa.oracle.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,10 +8,16 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
 @Entity
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name="MOCKUP")
 public class Mockup {
 
