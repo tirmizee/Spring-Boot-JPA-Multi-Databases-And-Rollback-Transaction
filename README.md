@@ -872,4 +872,3 @@ in src/main/resources
         2020-02-21 17:28:02.567  INFO 13912 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
         2020-02-21 17:28:03.034  INFO 13912 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
         2020-02-21 17:28:03.036  INFO 13912 --- [           main] paMultiDatabaseAndTransactionApplication : Started SpringBootJpaMultiDatabaseAndTransactionApplication in 47.149 seconds (JVM running for 47.485)
->>>>>>> branch 'master' of https://github.com/tirmizee/Spring-Boot-JPA-Multi-Databases-And-Rollback-Transaction.git
