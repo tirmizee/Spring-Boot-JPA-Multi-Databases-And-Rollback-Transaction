@@ -38,7 +38,6 @@ in src/main/resources
 
 - db_oracle.properties
 
-        enabled=true
 
         spring.datasource.oracle.hikari.jdbc-url=jdbc:oracle:thin:@192.168.20.114:1521:xe
         spring.datasource.oracle.hikari.username=C##ORGANIZATION
@@ -62,7 +61,6 @@ in src/main/resources
 
 - db_maria.properties
 
-        enabled=true
 
         spring.datasource.maria.hikari.jdbc-url=jdbc:mariadb://localhost:3305/schema_mariadb
         spring.datasource.maria.hikari.username=root
@@ -87,7 +85,6 @@ in src/main/resources
         
 - db_mysql.properties
         
-        enabled=true
 
         spring.datasource.mysql.hikari.jdbc-url=jdbc:mysql://localhost:3306/schema_mysql?useSSL=false&allowPublicKeyRetrieval=true
         spring.datasource.mysql.hikari.username=root
@@ -111,7 +108,6 @@ in src/main/resources
         
 - db_postgres.properties        
         
-        enabled=true
 
         spring.datasource.postgres.hikari.jdbc-url=jdbc:postgresql://localhost:5433/postgres
         spring.datasource.postgres.hikari.username=postgres
