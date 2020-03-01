@@ -137,19 +137,13 @@ in src/main/resources
 
 - Mysql service 
 
-![handle transaction](https://user-images.githubusercontent.com/15135199/75090688-01189680-5598-11ea-9bf7-b621302e2211.PNG)
-
 - Mariadb service 
-
-![handle transaction](https://user-images.githubusercontent.com/15135199/75091779-ab49eb80-55a3-11ea-838b-7c61a34c2c47.PNG)
 
 - Oracle service 
 
+- Postgres service
+
 ![handle transaction](https://user-images.githubusercontent.com/15135199/75091624-fa8f1c80-55a1-11ea-9b4c-829198d4167d.PNG)
-
-- Postgres service 
-
-![handle transaction](https://user-images.githubusercontent.com/15135199/75091759-70e04e80-55a3-11ea-9642-9f1925a21605.PNG)
 
 - Multi-Transaction service 
 
