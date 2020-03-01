@@ -5,6 +5,14 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 
 ### Technology stack
 
+- Spring Boot
+
+- Spring Data JPA
+
+- Oracle Mariadb Mysql and Postgressql databases
+
+- Lombok
+
 ### Project structure
 
 ![app](https://user-images.githubusercontent.com/15135199/75090765-cb27e200-5598-11ea-8217-e15115f16b7b.PNG)
