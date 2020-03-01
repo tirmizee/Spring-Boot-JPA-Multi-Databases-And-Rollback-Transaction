@@ -9,6 +9,8 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 
 - Spring Data JPA
 
+- Hikari connection pool
+
 - Oracle Mariadb Mysql and Postgresql databases
 
 - Lombok
