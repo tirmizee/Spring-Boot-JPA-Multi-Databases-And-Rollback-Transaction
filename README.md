@@ -132,6 +132,17 @@ in src/main/resources
         spring.jpa.properties.postgres.hibernate.format_sql=true
         spring.jpa.properties.postgres.hibernate.type=trace
         
+### Config JPA Repositories
+
+- Mysql Repository
+
+- Mariadb Repository
+
+- Postgres Repository
+
+- Oracle Repository
+
+
 
 ### Handle transaction in service layer
 
