@@ -3,6 +3,7 @@ Spring Data JPA multi-databases and rollback transaction using Hikari connection
 
 ![Untitled Diagram](https://user-images.githubusercontent.com/15135199/75026009-c139ac80-54ce-11ea-866c-0548d677312f.jpg)
 
+### Technology stack
 
 ### Project structure
 
