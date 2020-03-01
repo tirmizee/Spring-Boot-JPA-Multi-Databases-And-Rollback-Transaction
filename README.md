@@ -168,6 +168,10 @@ in src/main/resources
 
 ![ezgif com-resize (3)](https://user-images.githubusercontent.com/15135199/75095457-764f9000-55c7-11ea-960e-c0c8a9ab476f.gif)
 
+### Run application
+
+        java -jar Spring-Boot-JPA-Multi-Database-And-Transaction-0.0.1-SNAPSHOT.jar
+
 ### Console Log
 
 
