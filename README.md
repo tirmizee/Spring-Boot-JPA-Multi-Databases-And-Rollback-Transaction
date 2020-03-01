@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Spring-Boot-JPA-Multi-Databases-And-Rollback-Transaction
 Spring Data JPA multi-databases and rollback transaction using Hikari connection pool.
 
