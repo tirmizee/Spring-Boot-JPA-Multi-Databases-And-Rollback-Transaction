@@ -132,6 +132,18 @@ in src/main/resources
         spring.jpa.properties.postgres.hibernate.format_sql=true
         spring.jpa.properties.postgres.hibernate.type=trace
         
+### Config JPA Repositories
+
+- Mysql Repository
+
+- Mariadb Repository
+
+- Postgres Repository
+
+- Oracle Repository
+
+![Capture](https://user-images.githubusercontent.com/15135199/75626417-fe521d00-5bf9-11ea-922d-08c0e03fbef7.PNG)
+
 
 ### Handle transaction in service layer
 
@@ -139,9 +151,9 @@ in src/main/resources
 
 - Mariadb service 
 
-- Oracle service 
-
 - Postgres service
+
+- Oracle service
 
 ![handle transaction](https://user-images.githubusercontent.com/15135199/75091624-fa8f1c80-55a1-11ea-9b4c-829198d4167d.PNG)
 
@@ -168,7 +180,7 @@ in src/main/resources
 
 ![ezgif com-resize (3)](https://user-images.githubusercontent.com/15135199/75095457-764f9000-55c7-11ea-960e-c0c8a9ab476f.gif)
 
-### Run application
+### Run Application
 
         java -jar Spring-Boot-JPA-Multi-Database-And-Transaction-0.0.1-SNAPSHOT.jar
 
